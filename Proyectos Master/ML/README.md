@@ -5,7 +5,7 @@
 
 
 
-Here you can find all the course projects, in these you can find ML and Machine Learning.
+Here you can find all the course projects, in these you can find Machine Learning.
 
 All these projects are based on the 🐍 Python🐍  language.
 Mainly we have used the libraries :
