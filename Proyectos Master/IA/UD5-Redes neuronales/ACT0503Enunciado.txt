@@ -1,0 +1,7 @@
+Utilizando cualquiera de los frameworks de redes neuronales que hemos visto, implementa una red neuronal que prediga el rating de las películas de inmdb. Para ello, se deberá entrenar la red con las películas de los últimos 10 años y validar con las películas de 2023.
+
+Hay que realizar el autómata que descarga las películas, limpiar la información y diseñar la red neuronal. Como consejo, puede ser buena idea establecer como rating resultante el redondeo en tramos de 0.5 puntos del rating original. 
+
+Se ha de entregar el código junto con una justificación del diseño elegido además de las conclusiones habituales.
+
+EXTRA: Desarrollar una API para poder utilizar el modelo cada vez que lo necesitemos.

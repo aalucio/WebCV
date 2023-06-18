@@ -1,0 +1,11 @@
+En este proyecto la mayor complicación ha sido a la hora de crear un modelo de predicción con un conjunto de datos tan malo para ello, ya que la mayoría de los datos son cadenas de caracteres y eso dificulta mucho el proceso.También he podido poner en práctica muchos de los procesos aprendidos en este campo (Limpieza, Transformación).
+En definitiva, el resultado de predicción es muy bajo, ya que la dificultad del dataset y el uso de redes neuronales para ello dificulta la tarea de sacar mejor resultados. Usando otros tipos de modelo llegamos a conseguir un porcentaje de 0,45 en el score de predicción.
+Para solucionar todo esto me ayudo mucho usar una tecnica de tiketing en las columnas "string" del dataset.
+
+Otro de los problemas del dataset es la gran cantidad de valores nulos, especialmente en la columna "target" del preoceso, ya que esto no ayudo a tener un buen resultado de predicción.
+
+
+
+
+
+*En la API he tenido varios problemas, pero no he conseguido completarlo correctamente, le adjunto toda la preparación de la misma, me da un error a la hora de cargar el archivo del modelo, el resto del proceso funciona correctamente.
