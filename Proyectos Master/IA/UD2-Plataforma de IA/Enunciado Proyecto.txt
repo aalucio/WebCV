@@ -1,0 +1,3 @@
+Nos han contactado para ofrecernos un proyecto innovador de AI. Se trata de un servicio ofrecido mediante API REST que gestionará detección de elementos "significativos" en imágenes de calles peatonales. En concreto, la idea es detectar si alguno de los peatones es alguno de los 6 expertos en IA más buscados por el servicio secreto.
+
+Para poder ofrecer el proyecto, debemos ser capaces de demostrar nuestros conocimientos en programación de servicios y determinar cual será la arquitectura de nuestra aplicación.
