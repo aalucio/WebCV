@@ -1,0 +1,22 @@
+# Para ejecutar hive desde oozie:
+Copiar archivo hive-site.xml a la carpeta donde se encuentra el archivo workflow.xml y renombrarlo a hive-default.xml.
+Dentro de la configuración de la accion hive del workflow incluir:
+<property>
+	<name>oozie.hive.defaults</name>
+	<value>${nameNode}/user/cloudera/practica_oozie/hive-default.xml</value>
+</property>
++ info: https://oozie.apache.org/docs/3.3.1/DG_HiveActionExtension.html
+
+# Fallo hive desde oozie codificacion
+https://stackoverflow.com/questions/25684823/mismatchedtokenexception-on-hive-create-table-query
+https://www.sciencebuddies.org/science-fair-projects/references/ascii-table
+
+# Al unir el workflow y hacer el fork se obtienen mensajes del tipo:
+"org.apache.hadoop.mapred.TaskAttemptListenerImpl: Progress of TaskAttempt attempt_1462372008131_4318_m_000000_0 is : 1.0" repetidamente.
+Solución, mandar los trabajos en paralelo a colas distintas (esto pasa por ser un cluster de juguete).
+Afortunadamente, desde la opcion scheduler del resourcemanager vemos como ya hay dos colas, una root.default y la otra root.cloudera.
+Simplemente mandamos una de las accines del fork a la cola default mediante el cambio pertinente en el workflow.xml.
++info: https://community.cloudera.com/t5/Support-Questions/Hive-on-Tez-Progress-of-TaskAttempt-is-always-1-0-and-it/m-p/136921#M99570
+
+# Para aumentar memoria. Creo que al final no es necesario
+https://stackoverflow.com/questions/27653937/error-on-running-multiple-workflow-in-oozie-4-1-0/27855432#27855432
